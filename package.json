@@ -1,0 +1,26 @@
+{
+  "name": "momentum",
+  "version": "0.0.0",
+  "description": "Test application for the CryptoGraph system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cruhl/momentum.git"
+  },
+  "keywords": [
+    "crypto",
+    "react",
+    "graphql",
+    "redux",
+    "ethereum"
+  ],
+  "author": "cruhl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cruhl/momentum/issues"
+  },
+  "homepage": "https://github.com/cruhl/momentum#readme"
+}
