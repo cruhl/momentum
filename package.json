@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/cruhl/momentum/issues"
   },
-  "homepage": "https://github.com/cruhl/momentum#readme"
+  "homepage": "https://github.com/cruhl/momentum#readme",
+  "devDependencies": {
+    "@cryptograph/typescript-tooling": "^1.0.5",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.7.0",
+    "typescript": "^2.7.1"
+  }
 }
