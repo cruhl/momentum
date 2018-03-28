@@ -1,8 +1,27 @@
 type Query {
-  count: Int!
-  schema: __Schema!
+  goals: [Goal!]
 }
 
-type Mutation {
-  increment: Int!
+interface Node {
+  id: ID!
+  createdAt: DateTime!
+}
+
+scalar DateTime
+
+type Goal implements Node {
+  id: ID!
+  createdAt: DateTime!
+  title: String!
+}
+
+type Tap implements Node {
+  id: ID!
+  createdAt: DateTime!
+  direction: Direction
+}
+
+enum Direction {
+  FORWARD
+  BACKWARD
 }
