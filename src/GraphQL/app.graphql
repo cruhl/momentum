@@ -1,0 +1,8 @@
+type Query {
+  count: Int!
+  schema: __Schema!
+}
+
+type Mutation {
+  increment: Int!
+}
