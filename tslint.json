@@ -1,6 +1,9 @@
 {
   "extends": "./node_modules/@cryptograph/typescript-tooling/tslint.json",
   "rules": {
-    "variable-name": [true, "allow-pascal-case"]
+    "variable-name": [
+      true,
+      "allow-pascal-case"
+    ]
   }
 }

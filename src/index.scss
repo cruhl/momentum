@@ -1,7 +1,7 @@
 @import "common";
 
 html {
-  background: adjust-color($primary, $lightness: 34%, $saturation: -70%);
+  background: adjust-color($primary, $lightness: -55%, $saturation: -30%);
 
   font-size: 20px;
   font-family: "IBM Plex Sans Condensed", -apple-system, BlinkMacSystemFont,
@@ -13,4 +13,5 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
 }

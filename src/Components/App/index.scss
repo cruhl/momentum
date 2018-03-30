@@ -1,0 +1,65 @@
+@import "../../common";
+
+h1 {
+  margin: 0;
+}
+
+.goal {
+  margin: 1em;
+  padding: 0.8em 1em;
+
+  @include gradient-default(desaturate(darken($primary, 50%), 50%));
+
+  transition: all 1000ms ease;
+
+  h1 {
+    font-size: 1.8em;
+    font-weight: 200;
+    line-height: 0.9em;
+  }
+
+  .momentum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+
+    .stats {
+      font-size: 2em;
+      color: white;
+    }
+  }
+}
+
+.button {
+  display: block;
+  width: 3em;
+  height: 3em;
+
+  opacity: 0.4;
+  border-radius: 100%;
+
+  transition: all 1000ms ease;
+
+  &:active {
+    opacity: 1;
+    transition-duration: 100ms;
+  }
+
+  $scale: 1.03;
+  $translate: 0.4em;
+
+  &.backward {
+    @include gradient-default-inverted(rgb(236, 63, 51));
+    &:active {
+      transform: scale($scale) translateX(-$translate);
+    }
+  }
+
+  &.forward {
+    @include gradient-default(rgb(170, 228, 95));
+    &:active {
+      transform: scale($scale) translateX($translate);
+    }
+  }
+}
